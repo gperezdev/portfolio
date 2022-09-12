@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+$green: #74C69D;
+$green-lighter: #D8F3DC;
+$black: #222831;
+$dark: #14181d;
+$white: #f2fff4;
+$title-font: 'Barlow Condensed', sans-serif;
+$text-font: 'Montserrat', sans-serif;
+
+@mixin section {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
+    scroll-margin-top: 9rem;
+    color: $white;
+}
+
+@mixin vertical-text{
+    padding-top: 1.25rem;
+    font-size: 3rem;
+    font-weight: 200;
+    writing-mode: vertical-rl;
+    border-left: 0.125rem solid $white;
+    transform: rotate(180deg);
+}
+
+@mixin text-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+@mixin section-content{
+    display: flex;
+    scroll-margin-top: 5.5rem;
+    flex-direction: column;
+    margin: 1.25rem;
+
+        &__vertical-text{
+            padding-top: 0rem;
+            margin-bottom: 1.25rem;
+            font-size: 2rem;
+            font-weight: 400;
+            writing-mode: horizontal-tb;
+            border-left: 0rem;
+            border-bottom: 0.125rem solid $white;
+            transform: rotate(0deg);
+        }
+
+        &__text__container{
+
+            display: flex;
+            flex-direction: column;
+            margin: 0rem;
+
+            h1{
+                margin: 1.25rem 0px;
+                font-size: 2.25rem;
+            }
+        }
+
+        p{
+            margin: 0.15rem auto;
+            font-size: 1.1rem;
+        }
+}

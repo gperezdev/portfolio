@@ -1,0 +1,176 @@
+@use 'variables' as v;
+
+@media (orientation:landscape) and (max-height:500px){
+
+    .hero__title{
+      margin-top: 30vh;
+    }
+}
+
+@media only screen and (max-width:449px){
+
+    .navbar{
+        font-size: 0.8rem;
+    }
+
+    .hero__title{
+      font-size: 3.5rem;
+      letter-spacing: 0.75rem;
+
+      &-lined{
+        padding-left: 1rem;
+        letter-spacing: 1rem;
+      }
+    }
+
+    .hero__go-bottom{
+        line-height: 3rem;
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .hero__subtitle{
+        font-size: 1.1rem;
+    }
+
+    .about{
+
+        @include v.section-content();
+
+        &__skills{
+            margin: 0rem auto;
+
+            i{
+                line-height: 3.125rem;
+                font-size: 2rem;
+                height: 3.125rem;
+                width: 3.125rem;
+            }
+
+            .iconify{
+                height: 3.125rem;
+                width: 3.125rem;
+            }
+        }
+    }
+
+    .projects{
+
+        @include v.section-content();
+
+        &__project__list__project__card{
+
+            img{
+                width: 17rem;
+                height: 17/0.125rem;
+                object-fit: cover;
+            }
+
+            &__title{
+                font-size: 2rem !important;
+            
+            }
+
+            &__text{
+                font-size: 1.1rem;
+                max-width: 17rem;
+                min-height: 4rem;
+            }
+
+            &__links__link{
+                font-size: 1rem;
+            }
+        }     
+    }
+
+    .contact{
+
+        @include v.section-content();
+
+        &__text__container__social__media__list{
+
+            &__social__media-icon{
+                line-height: 3rem;
+                font-size: 2rem;
+                height: 3rem;
+                width: 3rem;
+            }
+
+            &__email{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    hr{
+        padding: 0.2rem !important;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1694px){
+
+    .hero__title{
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    .about, .projects, .contact{
+        scroll-margin-top: 6rem;
+    }
+
+    .about{
+
+        &__skills{
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+    }
+
+    .projects{
+
+        &__project__list__project__card{
+
+            img{
+                width: 25rem;
+                height: 12.5rem;
+                object-fit: cover;
+            }
+
+            &__text{
+                max-width: 25rem;
+            }
+        }     
+    }
+}
+
+@media only screen and (min-width: 1695px){
+
+    .hero__title{
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    .about, .projects, .contact{
+        scroll-margin-top: 7rem;
+        margin: 20px auto;
+        max-width: 1695px;
+    }
+
+    .projects{
+
+        &__project__list__project__card{
+
+            img{
+                width: 25rem;
+                height: 12.5rem;
+                object-fit: cover;
+            }
+
+            &__text{
+                max-width: 25rem;
+            }
+        }     
+    }
+}

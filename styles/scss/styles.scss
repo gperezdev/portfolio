@@ -1,0 +1,54 @@
+@use './scss/preloader';
+@use './scss/variables' as v;
+@use './scss/navbar';
+@use './scss/hero';
+@use './scss/about';
+@use './scss/projects';
+@use './scss/contact';
+@use './scss/footer';
+@use './scss/query';
+
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: v.$green #1e222a;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e222a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: v.$green;
+}
+
+body{
+    background-color: v.$black;
+    font-family: v.$text-font;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    padding: 20px;
+    background-color: v.$dark;
+}
+
+hr{
+    padding: 1.2rem;
+    border: 0px;
+}
+
+
+
+  
